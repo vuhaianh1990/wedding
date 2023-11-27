@@ -1,0 +1,69 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../assets/css/style.scss";
+
+import Page1 from "../components/Page1.astro";
+import Page2 from "../components/Page2.astro";
+import Page3 from "../components/Page3.astro";
+import Page4 from "../components/Page4.astro";
+import Page5 from "../components/Page5/Page5.astro";
+import Page6 from "../components/Page6/Page6.astro";
+import Page7 from "../components/Page7.astro";
+import Page8 from "../components/Page8.astro";
+
+const title = "Hai Anh & Nam Tran Wedding";
+---
+
+<script>
+  import hotkeys from "hotkeys-js";
+
+  // Open songs
+  document.addEventListener("click", function (e) {
+    const song = document.getElementById("song") as HTMLAudioElement;
+    if (song) {
+      song.play();
+    }
+  });
+
+  // Hotkeys
+  hotkeys("*", function (event, handler) {
+    if (event) {
+      const btns: any = [...document.querySelectorAll('input[name="trigger"]')];
+      const current = btns.findIndex((btn: any) => btn.checked);
+
+      switch (event.key) {
+        case "ArrowLeft":
+          btns[(current - 1) % btns.length].checked = true;
+          break;
+
+        case "ArrowRight":
+          btns[(current + 1) % btns.length].checked = true;
+          break;
+      }
+    }
+  });
+</script>
+
+<Layout title={title}>
+  <audio id="song" autoplay hidden loop playsinline>
+    <source src="/wedding/media/yeulacuoi.mp3" data-track-number="1" />
+  </audio>
+
+  <main class="pages">
+    <input class="navigation" id="one" name="trigger" type="radio" />
+    <input class="navigation" id="two" name="trigger" type="radio" />
+    <input class="navigation" id="three" name="trigger" type="radio" />
+    <input class="navigation" id="four" name="trigger" type="radio" />
+
+    <Page1 />
+    <Page2 />
+    <Page3 />
+    <Page4 />
+    <Page5 />
+    <Page6 />
+    <Page7 />
+    <Page8 />
+  </main>
+</Layout>
+
+<style lang="scss"></style>

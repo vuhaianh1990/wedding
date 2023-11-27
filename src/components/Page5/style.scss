@@ -1,0 +1,202 @@
+a.polaroid {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 1.428% 1.428% 2.857% 1.428%;
+  width: 21.428%;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  z-index: 1;
+  font-size: 0.7em;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+  z-index: 5;
+  border-color: #6a6a6a;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.polaroid img {
+  margin: 0 0 2.142%;
+  width: 21.428%;
+  height: 21.428%;
+}
+
+a img {
+  border: none;
+  display: block;
+}
+
+.photo-album {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 57.15%;
+  top: 17.2%;
+  min-width: 100%;
+  max-width: 1000px;
+
+  .polaroid {
+    position: absolute;
+  }
+  h6 {
+    position: absolute;
+    z-index: 5;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    line-height: 1.9;
+    span {
+      background-color: white;
+      font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+      padding: 0.4em 0.8em 0.3em 0.8em;
+      -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      border: 1px solid #6a6a6a;
+    }
+  }
+  .small {
+    width: 9.375%;
+    padding: 0.857% 0.857% 1.714% 0.857%;
+    font-size: 0.6em;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+  .medium {
+    width: 25%;
+    padding: 1.857% 1.857% 3.714% 1.857%;
+    font-size: 0.8em;
+  }
+  .large {
+    width: 37.5%;
+    padding: 2.857% 2.857% 4.286% 2.857%;
+    font-size: 1em;
+  }
+
+  .img1 {
+    bottom: -6.35%;
+    right: -22.857%;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  .img2 {
+    top: 0;
+    right: -7.143%;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  .img3 {
+    left: 57.143%;
+    top: 0;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  .img4 {
+    top: -2.921%;
+    right: -51.429%;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  .img5 {
+    top: 20.955%;
+    right: -68.571%;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    transform: rotate(1deg);
+  }
+  .img6 {
+    bottom: 5.969%;
+    right: 16.857%;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  .img7 {
+    top: 6.35%;
+    right: -20.285%;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  .img8 {
+    bottom: 21.971%;
+    right: -5%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+
+  .img9 {
+    bottom: -3.175%;
+    right: -55.714%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .img10 {
+    top: 26.716%;
+    left: 41.714%;
+    -webkit-transform: rotate(8deg);
+    -moz-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  .img11 {
+    top: 0;
+    right: -21.429%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  .img12 {
+    top: 10.414%;
+    right: -41.857%;
+    -webkit-transform: rotate(18deg);
+    -moz-transform: rotate(18deg);
+    transform: rotate(18deg);
+  }
+  .img13 {
+    bottom: 2.54%;
+    right: 37.857%;
+    -webkit-transform: rotate(4deg);
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  .img14 {
+    top: 28.43%;
+    left: 61.428%;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  .img15 {
+    left:25.143%;
+    top: 2.54%;
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+}
+
+a:hover,
+a:focus {
+  z-index: 5;
+}

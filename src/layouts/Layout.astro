@@ -1,0 +1,69 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{title}</title>
+
+    <link rel="icon" type="image/svg+xml" href="/wedding/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/wedding/css/sakura.min.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Hai Anh & Nam Tran Wedding" />
+    <meta
+      name="description"
+      content="Invite you to join us at the celebration of our wedding"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vuhaianh.com/wedding" />
+    <meta property="og:title" content="Hai Anh & Nam Tran Wedding" />
+    <meta
+      property="og:description"
+      content="Invite you to join us at the celebration of our wedding"
+    />
+    <meta property="og:image" content="/wedding/img/page1-2.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vuhaianh.com/wedding" />
+    <meta property="twitter:title" content="Hai Anh & Nam Tran Wedding" />
+    <meta
+      property="twitter:description"
+      content="Invite you to join us at the celebration of our wedding"
+    />
+    <meta property="twitter:image" content="/wedding/img/page1-2.jpg" />
+  </head>
+  <body>
+    <div id="device-warning">
+      <div class="phone"></div>
+      <div class="message">Vui lòng <br /> chuyển sang màn hình ngang</div>
+    </div>
+    <slot />
+    <script is:inline src="/wedding/js/sakura.js"></script>
+    <script>
+      const sakura = new Sakura("body", {
+        colors: [
+          {
+            gradientColorStart: "rgba(255, 183, 197, 0.9)",
+            gradientColorEnd: "rgba(255, 197, 208, 0.9)",
+            gradientColorDegree: 120,
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
+<style is:global></style>
